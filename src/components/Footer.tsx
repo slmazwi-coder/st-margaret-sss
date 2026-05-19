@@ -62,15 +62,15 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm" style={ { color: 'rgba(93,173,226,0.8)' } }>
               <li className="flex items-start gap-2">
                 <MapPin className="shrink-0 mt-0.5" size={16} />
-                <span>St Paul's Mission, Ramohlakoana A/A, P.O. Box 1266, Maluti, 4730 (Eastern Cape)</span>
+                <span>St Paul, Matatiele, South Africa, 4730</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="shrink-0" />
-                <span>+27 39 256 4000</span>
+                <span>072 293 0713</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={16} className="shrink-0 mt-0.5" />
-                <span className="break-all">stmargaretsss@ecschools.org.za</span>
+                <span className="break-all">navigator024@gmail.com</span>
               </li>
             </ul>
           </div>

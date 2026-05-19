@@ -310,9 +310,9 @@ export const setApplications = (items: Application[]) => setItems('admin_applica
 
 // Contact
 const defaultContact: ContactInfo = {
-  address: 'St Paul\'s Mission, Ramohlakoana A/A, P.O. Box 1266, Maluti, 4730 (Eastern Cape)',
-  phone: '+27 39 256 4000',
-  email: 'stmargaretsss@ecschools.org.za',
+  address: 'St Paul, Matatiele, South Africa, 4730',
+  phone: '072 293 0713',
+  email: 'navigator024@gmail.com',
   monThu: '07:30 - 15:30',
   friday: '07:30 - 13:30',
   weekend: 'Closed',
