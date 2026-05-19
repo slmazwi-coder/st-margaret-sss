@@ -21,16 +21,16 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="w-full sticky top-0 z-50" style={ { background: '#1B2A4A', borderBottom: '3px solid #1B2A4A' } }>
+    <nav className="w-full sticky top-0 z-50" style={ { background: '#4B5563', borderBottom: '3px solid #5DADE2' } }>
 
       {/* ── Top bar: Logo + School name + Student Portal ── */}
-      <div className="w-full" style={ { borderBottom: '1px solid rgba(27,42,74,0.3)' } }>
+      <div className="w-full" style={ { borderBottom: '1px solid rgba(75,85,99,0.3)' } }>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
             {/* Logo + Name */}
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
-              <div className="h-11 w-11 shrink-0 rounded-xl bg-white flex items-center justify-center overflow-hidden shadow-md" style={ { border: '2px solid #1B2A4A' } }>
+              <div className="h-11 w-11 shrink-0 rounded-xl bg-white flex items-center justify-center overflow-hidden shadow-md" style={ { border: '2px solid #5DADE2' } }>
                 <img
                   src="/smlogo.png"
                   alt="St Margaret SSS logo"
@@ -81,7 +81,7 @@ export const Navbar = () => {
       </div>
 
       {/* ── Bottom bar: Nav links (desktop only) ── */}
-      <div className="hidden md:block w-full" style={ { background: '#1B2A4A' } }>
+      <div className="hidden md:block w-full" style={ { background: '#4B5563' } }>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center flex-wrap gap-x-1 gap-y-0 py-1">
             {navLinks.map((link) => (
@@ -114,7 +114,7 @@ export const Navbar = () => {
 
       {/* ── Mobile dropdown ── */}
       {isOpen && (
-        <div className="md:hidden shadow-lg" style={ { background: '#1B2A4A', borderTop: '1px solid rgba(93,173,226,0.3)' } }>
+        <div className="md:hidden shadow-lg" style={ { background: '#4B5563', borderTop: '1px solid rgba(93,173,226,0.3)' } }>
           <div className="px-3 pt-2 pb-4 space-y-1">
             {navLinks.map((link) => (
               <Link

@@ -33,8 +33,8 @@ export const About = () => {
             viewport={ { once: true } }
             className="flex flex-col justify-center"
           >
-            <div className="border-l-4 border-[#1B2A4A] pl-5 mb-6">
-              <h2 className="text-2xl font-bold text-[#1B2A4A]">Our School</h2>
+            <div className="border-l-4 border-[#5DADE2] pl-5 mb-6">
+              <h2 className="text-2xl font-bold text-[#374151]">Our School</h2>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed text-base">
               {data.historyParagraphs.map((p, i) => (
@@ -49,13 +49,13 @@ export const About = () => {
             whileInView={ { opacity: 1, y: 0 } }
             transition={ { duration: 0.35, delay: 0.05 } }
             viewport={ { once: true } }
-            className="bg-[#F0F4F8] rounded-3xl overflow-hidden shadow-lg border border-[#1B2A4A]"
+            className="bg-[#F0F4F8] rounded-3xl overflow-hidden shadow-lg border border-[#5DADE2]"
           >
-            <div className="bg-[#1B2A4A] p-6 sm:p-8">
-              {/* Outer holder: rounded + gold frame all around */}
+            <div className="bg-[#4B5563] p-6 sm:p-8">
+              {/* Outer holder: rounded + blue frame all around */}
               <div
-                className="w-full rounded-3xl bg-[#1B2A4A] p-2 sm:p-3"
-                style={ { border: '4px solid #1B2A4A' } }
+                className="w-full rounded-3xl bg-[#4B5563] p-2 sm:p-3"
+                style={ { border: '4px solid #5DADE2' } }
               >
                 {/* Inner holder: keeps the image nicely clipped on all corners */}
                 <div className="w-full rounded-2xl overflow-hidden shadow-xl" style={ { aspectRatio: '4/3' } }>
@@ -63,11 +63,11 @@ export const About = () => {
                     <img
                       src={campusImageUrl}
                       alt="School campus"
-                      className="w-full h-full object-contain bg-[#1B2A4A]"
+                      className="w-full h-full object-contain bg-[#4B5563]"
                       onError={() => setCampusFailed(true)}
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-[#1B2A4A] via-[#1B2A4A] to-[#1B2A4A] flex items-center justify-center">
+                    <div className="w-full h-full bg-gradient-to-br from-[#4B5563] via-[#4B5563] to-[#4B5563] flex items-center justify-center">
                       <div className="text-center text-white/70 px-6">
                         <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
                           <ImageIcon />
@@ -93,18 +93,18 @@ export const About = () => {
         >
           {/* Section heading */}
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-[#1B2A4A] mb-2">Principal's Message</h2>
-            <div className="w-16 h-1 bg-[#1B2A4A] mx-auto rounded-full" />
+            <h2 className="text-3xl font-extrabold text-[#374151] mb-2">Principal's Message</h2>
+            <div className="w-16 h-1 bg-[#5DADE2] mx-auto rounded-full" />
           </div>
 
           {/* Card */}
-          <div className="bg-[#F0F4F8] rounded-3xl overflow-hidden shadow-lg border border-[#1B2A4A]">
+          <div className="bg-[#F0F4F8] rounded-3xl overflow-hidden shadow-lg border border-[#5DADE2]">
             <div className="grid grid-cols-1 md:grid-cols-3">
 
               {/* Principal Photo Column */}
-              <div className="flex flex-col items-center justify-center bg-[#1B2A4A] p-8 md:p-10">
+              <div className="flex flex-col items-center justify-center bg-[#4B5563] p-8 md:p-10">
                 {/* Photo frame */}
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[#1B2A4A] shadow-xl mb-5">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[#5DADE2] shadow-xl mb-5">
                   {!principalFailed ? (
                     <img
                       src={principalImageUrl}
@@ -113,7 +113,7 @@ export const About = () => {
                       onError={() => setPrincipalFailed(true)}
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-[#1B2A4A]">
+                    <div className="w-full h-full flex items-center justify-center bg-[#4B5563]">
                       <ImageIcon className="text-white/40" size={40} />
                     </div>
                   )}
@@ -123,18 +123,18 @@ export const About = () => {
                 <h3 className="text-lg font-bold text-white text-center leading-tight">
                   {data.principalName}
                 </h3>
-                <p className="text-[#1B2A4A] text-sm font-semibold mt-1 text-center">
+                <p className="text-[#5DADE2] text-sm font-semibold mt-1 text-center">
                   {data.principalTitle}
                 </p>
 
                 {/* Decorative divider */}
-                <div className="w-10 h-0.5 bg-[#1B2A4A] mt-4 rounded-full opacity-60" />
+                <div className="w-10 h-0.5 bg-[#5DADE2] mt-4 rounded-full opacity-60" />
               </div>
 
               {/* Message Column */}
               <div className="col-span-2 flex flex-col justify-center p-8 md:p-12">
                 {/* Opening quote mark — decorative only, not wrapping text */}
-                <div className="text-[#1B2A4A] text-6xl font-serif leading-none mb-2 opacity-40 select-none">
+                <div className="text-[#5DADE2] text-6xl font-serif leading-none mb-2 opacity-40 select-none">
                   "
                 </div>
 
@@ -145,7 +145,7 @@ export const About = () => {
                 </div>
 
                 {/* Closing quote mark — decorative only */}
-                <div className="text-[#1B2A4A] text-6xl font-serif leading-none mt-2 text-right opacity-40 select-none">
+                <div className="text-[#5DADE2] text-6xl font-serif leading-none mt-2 text-right opacity-40 select-none">
                   "
                 </div>
               </div>
