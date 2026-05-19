@@ -94,8 +94,6 @@ export const ApplicationsEditor = () => {
         'DOB',
         'Grade',
         'Year',
-        'ApplicationType',
-        'BoardingType',
         'Locality',
         'Address',
         'PreviousSchool',
@@ -114,8 +112,6 @@ export const ApplicationsEditor = () => {
           a.dob,
           a.grade,
           a.year,
-          a.applicationType,
-          a.boardingType || '',
           a.locality || '',
           a.address,
           a.previousSchool || '',
@@ -185,7 +181,6 @@ export const ApplicationsEditor = () => {
         >
           <option value="">All Types</option>
           <option value="General">General</option>
-          <option value="Boarding">Boarding</option>
         </select>
         <select
           value={statusFilter}
@@ -270,12 +265,7 @@ export const ApplicationsEditor = () => {
                       <span className="text-gray-400">Address:</span>{' '}
                       <span className="text-white ml-2">{app.address}</span>
                     </div>
-                    {app.applicationType === 'Boarding' ? (
-                      <div>
-                        <span className="text-gray-400">Boarding Type:</span>{' '}
-                        <span className="text-white ml-2">{app.boardingType || '-'}</span>
-                      </div>
-                    ) : null}
+
                   </div>
 
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
