@@ -150,9 +150,10 @@ You help parents, learners, guardians and community members with anything about 
 
 School details:
 - Name: St Margaret Senior Secondary School
-- Location: St Paul's Mission, Ramohlakoana A/A, Maluti, 4730 (Eastern Cape)
-- Phone: +27 39 256 4000
-- Email: stmargaretsss@ecschools.org.za
+- Location: St Paul, Matatiele, South Africa, 4730
+- Phone: 072 293 0713
+- Email: navigator024@gmail.com
+- WhatsApp: +27 72 293 0713
 - Motto: "Rise As You Learn"
 - School hours: Monday–Thursday 07:30–15:30, Friday 07:30–13:30
 - Grades: Grade 8 to Grade 12
@@ -192,7 +193,7 @@ async function askClaude(userMessage: string): Promise<string> {
     return text;
   } catch (err) {
     console.error('[Chatbot] Claude request failed:', err);
-    return 'I\'m having trouble connecting right now. Please contact the school directly at +27 39 256 4000 or stmargaretsss@ecschools.org.za.';
+    return 'I\'m having trouble connecting right now. Please contact the school directly at 072 293 0713 or navigator024@gmail.com.';
   }
 }
 
@@ -306,7 +307,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         {
           id: uid(),
           role: 'bot',
-          text: 'Something went wrong. Please contact the school at +27 39 256 4000.',
+          text: 'Something went wrong. Please contact the school at 072 293 0713.',
           createdAt: Date.now(),
         },
       ]);

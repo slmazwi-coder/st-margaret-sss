@@ -314,7 +314,7 @@ export const Admissions = () => {
                 </p>
               </div>
               <div className="text-right text-sm text-white/70">
-                <div>Tel: +27 39 256 4000</div>
+                <div>Tel: 072 293 0713</div>
                 <div>Step {step} of 3</div>
               </div>
             </div>
