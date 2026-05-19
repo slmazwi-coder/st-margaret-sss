@@ -15,7 +15,7 @@ const staffData: StaffMember[] = [
     name: 'Mr Khasibe',
     position: 'Principal',
     category: 'Leadership',
-    image: './assets/about/principal.jpg',
+    image: '/assets/about/principal.jpg',
   },
   {
     name: 'The Deputy Principal',
@@ -77,12 +77,12 @@ const categories = [
 const StaffCard = ({ member }: { member: StaffMember }) => (
   <div
     className="rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center p-6 text-center hover:-translate-y-1"
-    style={ { background: '#F5F7FA', border: '1px solid #1B2A4A' } }
+    style={ { background: '#F5F7FA', border: '1px solid #D1D5DB' } }
   >
     {/* Avatar */}
     <div
       className="w-24 h-24 rounded-full flex items-center justify-center mb-4 overflow-hidden"
-      style={ { background: '#F0F4F8', border: '3px solid #1B2A4A' } }
+      style={ { background: '#F0F4F8', border: '3px solid #5DADE2' } }
     >
       {member.image ? (
         <img
@@ -92,20 +92,20 @@ const StaffCard = ({ member }: { member: StaffMember }) => (
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
         />
       ) : (
-        <User size={40} style={ { color: '#1B2A4A', opacity: 0.5 } } />
+        <User size={40} style={ { color: '#5DADE2', opacity: 0.5 } } />
       )}
     </div>
 
-    <h3 className="text-sm font-bold leading-tight" style={ { color: '#1B2A4A' } }>
+    <h3 className="text-sm font-bold leading-tight" style={ { color: '#374151' } }>
       {member.name}
     </h3>
-    <p className="text-xs font-semibold mt-1" style={ { color: '#1B2A4A' } }>
+    <p className="text-xs font-semibold mt-1" style={ { color: '#6B7280' } }>
       {member.position}
     </p>
     {member.subject && (
       <span
         className="mt-2 inline-block text-xs font-medium px-3 py-1 rounded-full"
-        style={ { background: '#F0F4F8', color: '#1B2A4A', border: '1px solid #1B2A4A' } }
+        style={ { background: '#EBF5FB', color: '#5DADE2', border: '1px solid #5DADE2' } }
       >
         {member.subject}
       </span>
@@ -123,10 +123,10 @@ export const Staff = () => {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-3" style={ { color: '#1B2A4A' } }>
+          <h1 className="text-4xl font-extrabold tracking-tight mb-3" style={ { color: '#374151' } }>
             Our Staff
           </h1>
-          <div className="w-16 h-1 mx-auto rounded-full mb-4" style={ { background: '#1B2A4A' } } />
+          <div className="w-16 h-1 mx-auto rounded-full mb-4" style={ { background: '#5DADE2' } } />
           <p className="text-gray-500 text-base max-w-2xl mx-auto">
             Meet the dedicated team of educators and support staff at St Margaret Senior Secondary School.
           </p>
@@ -140,8 +140,8 @@ export const Staff = () => {
               onClick={() => setActiveCategory(cat)}
               style={
                 activeCategory === cat
-                  ? { background: '#1B2A4A', color: '#1B2A4A', border: '2px solid #1B2A4A', fontWeight: 700 }
-                  : { background: '#F5F7FA', color: '#1B2A4A', border: '2px solid #1B2A4A' }
+                  ? { background: '#5DADE2', color: '#FFFFFF', border: '2px solid #5DADE2', fontWeight: 700 }
+                  : { background: '#F5F7FA', color: '#374151', border: '2px solid #D1D5DB' }
               }
               className="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:shadow-md"
             >

@@ -14,7 +14,7 @@ const TikTokIcon = (props: { size?: number; className?: string }) => {
 
 export const Footer = () => {
   return (
-    <footer className="pt-12 pb-8 w-full" style={ { background: '#1B2A4A', borderTop: '4px solid #1B2A4A' } }>
+    <footer className="pt-12 pb-8 w-full" style={ { background: '#4B5563', borderTop: '4px solid #5DADE2' } }>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">

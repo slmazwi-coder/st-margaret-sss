@@ -178,7 +178,7 @@ export const StudentDocsEditor = () => {
           <button
             onClick={upload}
             disabled={!canUpload}
-            className="bg-[#1B2A4A] text-white px-6 py-2 rounded-xl font-medium hover:bg-[#5DADE2] disabled:opacity-50"
+            className="bg-[#5DADE2] text-white px-6 py-2 rounded-xl font-medium hover:bg-[#5DADE2] disabled:opacity-50"
           >
             Upload
           </button>
