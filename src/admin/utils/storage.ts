@@ -324,10 +324,10 @@ export const setContact = (info: ContactInfo) => setObject('admin_contact', info
 const defaultAbout: AboutInfo = {
   historyParagraphs: [
     'St Margaret Senior Secondary School is a public school proudly serving learners at St Paul\'s Mission, Ramohlakoana A/A, Maluti, in the Alfred Nzo District of the Eastern Cape.',
-    'Rooted in a rich tradition of faith-based education, St Margaret SSS is committed to academic excellence, discipline, and community upliftment. Our motto — "Faith and Knowledge" — reflects the values that guide every learner and educator at our school.',
+    'Rooted in a rich tradition of faith-based education, St Margaret SSS is committed to academic excellence, discipline, and community upliftment. Our motto — "Rise As You Learn" — reflects the values that guide every learner and educator at our school.',
     'Parents and guardians are encouraged to engage actively with the school through meetings, events, and ongoing learner support. Together we build a culture of achievement, faith, and pride.',
   ],
-  principalName: 'The Principal',
+  principalName: 'Mr Khasibe',
   principalTitle: 'Principal',
   principalMessage: [
     'Welcome to St Margaret Senior Secondary School. We believe every learner carries within them the capacity for greatness. Our role is to unlock it — through faith, discipline, and unwavering belief in their potential.',
