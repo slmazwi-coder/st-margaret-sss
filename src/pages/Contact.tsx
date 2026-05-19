@@ -17,10 +17,10 @@ export const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
-            <h2 className="text-2xl font-bold text-[#166534] mb-8">Get in Touch</h2>
+            <h2 className="text-2xl font-bold text-[#1B2A4A] mb-8">Get in Touch</h2>
             <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#FDF9EC] text-[#166534] rounded-xl">
+                <div className="p-3 bg-[#F0F4F8] text-[#1B2A4A] rounded-xl">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -29,7 +29,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#FDF9EC] text-[#166534] rounded-xl">
+                <div className="p-3 bg-[#F0F4F8] text-[#1B2A4A] rounded-xl">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -38,7 +38,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#FDF9EC] text-[#166534] rounded-xl">
+                <div className="p-3 bg-[#F0F4F8] text-[#1B2A4A] rounded-xl">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -47,7 +47,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#FDF9EC] text-[#166534] rounded-xl">
+                <div className="p-3 bg-[#F0F4F8] text-[#1B2A4A] rounded-xl">
                   <Clock size={24} />
                 </div>
                 <div>
@@ -74,13 +74,13 @@ export const Contact = () => {
             transition={{ duration: 0.3, delay: 0.05 }}
             className="bg-gray-50 p-6 sm:p-8 md:p-10 rounded-3xl border border-gray-100 shadow-sm"
           >
-            <h2 className="text-2xl font-bold text-[#166534] mb-8">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-[#1B2A4A] mb-8">Send us a Message</h2>
             <form className="space-y-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700">Full Name</label>
                 <input
                   type="text"
-                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#C8A400]/20 outline-none"
+                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1B2A4A]/20 outline-none"
                   placeholder="Your name"
                 />
               </div>
@@ -88,7 +88,7 @@ export const Contact = () => {
                 <label className="text-sm font-bold text-gray-700">Email Address</label>
                 <input
                   type="email"
-                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#C8A400]/20 outline-none"
+                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1B2A4A]/20 outline-none"
                   placeholder="Your email"
                 />
               </div>
@@ -96,7 +96,7 @@ export const Contact = () => {
                 <label className="text-sm font-bold text-gray-700">Subject</label>
                 <input
                   type="text"
-                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#C8A400]/20 outline-none"
+                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1B2A4A]/20 outline-none"
                   placeholder="What is this regarding?"
                 />
               </div>
@@ -104,7 +104,7 @@ export const Contact = () => {
                 <label className="text-sm font-bold text-gray-700">Message</label>
                 <textarea
                   rows={4}
-                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#C8A400]/20 outline-none resize-none"
+                  className="w-full p-4 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-[#1B2A4A]/20 outline-none resize-none"
                   placeholder="How can we help you?"
                 />
               </div>

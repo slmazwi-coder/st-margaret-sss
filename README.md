@@ -2,7 +2,7 @@
 
 # St Margaret Senior Secondary School
 
-**"Faith and Knowledge"**
+**"Rise As You Learn"**
 
 St Paul's Mission, Ramohlakoana A/A, Maluti, 4730 — Eastern Cape, South Africa
 

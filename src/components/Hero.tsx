@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   { url: './smhero1.png',  caption: 'Academic excellence' },
-  { url: './smhero2.png',  caption: 'Faith and Knowledge' },
+  { url: './smhero2.png',  caption: 'Rise As You Learn' },
   { url: './smhero3.png',  caption: 'Our learners, our pride' },
   { url: './smhero4.png',  caption: 'Celebrating achievement' },
   { url: './smhero5.png',  caption: 'Discipline and hard work' },
@@ -31,7 +31,7 @@ export const Hero = () => {
   const slide = slides[currentIndex];
 
   return (
-    <div className="relative h-[650px] w-full overflow-hidden" style={ { background: '#166534' } }>
+    <div className="relative h-[650px] w-full overflow-hidden" style={ { background: '#1B2A4A' } }>
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -49,7 +49,7 @@ export const Hero = () => {
           />
           {/* Gradient overlay */}
           <div className="absolute inset-0"
-            style={ { background: 'linear-gradient(to top, rgba(58,8,18,0.92) 0%, rgba(123,28,46,0.55) 45%, rgba(26,10,15,0.35) 100%)' } } />
+            style={ { background: 'linear-gradient(to top, rgba(10,20,40,0.92) 0%, rgba(27,42,74,0.55) 45%, rgba(10,15,30,0.35) 100%)' } } />
         </motion.div>
       </AnimatePresence>
 
@@ -63,7 +63,7 @@ export const Hero = () => {
             exit={ { opacity: 0, y: -8 } }
             transition={ { duration: 0.35 } }
             className="text-base md:text-lg font-medium tracking-widest uppercase"
-            style={ { color: 'rgba(200,164,0,0.85)' } }
+            style={ { color: 'rgba(93,173,226,0.85)' } }
           >
             {slide.caption}
           </motion.p>
@@ -83,7 +83,7 @@ export const Hero = () => {
             src="./smlogo.png"
             alt="St Margaret SSS crest"
             className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-2xl mx-auto"
-            style={ { border: '3px solid #C8A400' } }
+            style={ { border: '3px solid #1B2A4A' } }
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
           />
         </motion.div>
@@ -93,7 +93,7 @@ export const Hero = () => {
           animate={ { opacity: 1, y: 0 } }
           transition={ { duration: 0.5, delay: 0.1 } }
           className="text-4xl md:text-6xl font-extrabold mb-3 uppercase tracking-wider"
-          style={ { color: '#C8A400' } }
+          style={ { color: '#1B2A4A' } }
         >
           St Margaret SSS
         </motion.h1>
@@ -103,9 +103,9 @@ export const Hero = () => {
           animate={ { opacity: 1, y: 0 } }
           transition={ { duration: 0.5, delay: 0.18 } }
           className="text-base md:text-xl font-light italic mb-8"
-          style={ { color: 'rgba(200,164,0,0.8)' } }
+          style={ { color: 'rgba(93,173,226,0.8)' } }
         >
-          "Faith and Knowledge"
+          "Rise As You Learn"
         </motion.p>
 
         <motion.div
@@ -116,13 +116,13 @@ export const Hero = () => {
         >
           <a href="/admissions"
             className="px-7 py-3 font-bold transition-all rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-            style={ { background: '#C8A400', color: '#166534' } }
+            style={ { background: '#1B2A4A', color: '#1B2A4A' } }
           >
             Apply Now
           </a>
           <a href="/about"
             className="px-7 py-3 font-bold transition-all rounded-lg hover:-translate-y-0.5"
-            style={ { border: '2px solid #C8A400', color: '#C8A400', background: 'transparent' } }
+            style={ { border: '2px solid #1B2A4A', color: '#1B2A4A', background: 'transparent' } }
           >
             About Us
           </a>
@@ -133,7 +133,7 @@ export const Hero = () => {
       <button
         onClick={prev}
         className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full z-20 transition-all hover:scale-110"
-        style={ { background: 'rgba(200,164,0,0.2)', color: '#C8A400' } }
+        style={ { background: 'rgba(93,173,226,0.2)', color: '#1B2A4A' } }
         aria-label="Previous"
       >
         <ChevronLeft size={32} />
@@ -141,7 +141,7 @@ export const Hero = () => {
       <button
         onClick={next}
         className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full z-20 transition-all hover:scale-110"
-        style={ { background: 'rgba(200,164,0,0.2)', color: '#C8A400' } }
+        style={ { background: 'rgba(93,173,226,0.2)', color: '#1B2A4A' } }
         aria-label="Next"
       >
         <ChevronRight size={32} />
@@ -154,7 +154,7 @@ export const Hero = () => {
             key={i}
             onClick={() => setCurrentIndex(i)}
             className="h-2 w-2 rounded-full transition-all"
-            style={ { background: i === currentIndex ? '#C8A400' : 'rgba(200,164,0,0.3)' } }
+            style={ { background: i === currentIndex ? '#1B2A4A' : 'rgba(93,173,226,0.3)' } }
           />
         ))}
       </div>
