@@ -173,9 +173,7 @@ export interface Application {
   correspondenceDetails?: CorrespondenceDetails;
   otherContactDetails?: OtherContactDetails;
 
-  // Boarding
-  applicationType: 'General' | 'Boarding';
-  boardingType?: string;
+  applicationType: 'General';
 
   // Uploads
   uploads: UploadedFile[];
@@ -293,7 +291,7 @@ const defaultNews: NewsItem[] = [
     title: '2027 Applications Open',
     date: 'Now open',
     content:
-      'Applications for admissions and boarding for the 2027 academic year are now open. Please submit your application using the online forms.',
+      'Applications for admissions for the 2027 academic year are now open. Please submit your application using the online form.',
     image: '',
   },
 ];
